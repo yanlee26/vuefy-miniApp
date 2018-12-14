@@ -1,5 +1,8 @@
 require('./Extend/mixin.js')
 App({
-    globalData:{
-    }
+  globalData: {
+    backgroundAudioManager: wx.getBackgroundAudioManager(),
+    g_trackAudioProgress: new Map(),
+
+  }
 })

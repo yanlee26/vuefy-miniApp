@@ -51,3 +51,17 @@ function mixinProps(target, source) {
         }
     })
 }
+// totalDuration 格式化显示
+export function processTotalDuration(totalDuration) {
+  totalDuration = parseInt(totalDuration)
+  return `${formatNumber(Math.floor(totalDuration / 60))}:${formatNumber(totalDuration % 60)}`
+}
+// 补全两位数字
+export function formatNumber(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+// 转时间为秒
+export function convertTimeToSeconds(str = '00:00') {
+  return str.split(':').map(x => x[0] > 0 ? Number(x) : Number(x[1])).reduce((x, y) => 60 * x + y, 0)
+}
