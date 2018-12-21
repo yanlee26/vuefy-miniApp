@@ -5,13 +5,13 @@ import Rec from './Rec'
 import Arc from './Arc'
 import Img from './Img'
 import {
-    mixinClass,
+  mixinClass,
 } from '../../utils/index'
 
 class Index extends mixinClass(Base, Line, Rec, Arc, Img, Text) {
-    constructor(params) {
-        super(params)
-    }
+  constructor(params) {
+    super(params)
+  }
 }
 
 export default Index
