@@ -20,60 +20,10 @@
 
 - [x] 常用组件[上拉加载，音频，，，]
 
+## 启动
 
-```
-├── app.js
-├── app.json
-├── app.wxss
-├── Class
-│   └── Canvas   // canvas类，各个文件可单独按需导出，也可以通过Index总体导出；采用AOP式编程风格
-│       ├── Arc.js
-│       ├── Base.js
-│       ├── Img.js
-│       ├── Index.js
-│       ├── Line.js
-│       ├── Rec.js
-│       ├── Text.js
-│       └── WxAPI.js
-├── Component
-│   └── scroll-view
-│       ├── index.js
-│       ├── index.json
-│       ├── index.wxml
-│       └── index.wxss
-├── Extend
-│   ├── mixin.js  // 混入扩展
-│   └── vuefy.js  // watch及computed扩展
-├── pages
-│   ├── canvas
-│   │   ├── index.js
-│   │   ├── index.wxml
-│   │   └── index.wxss
-│   ├── mixin
-│   │   ├── index.js
-│   │   ├── index.wxml
-│   │   ├── index.wxss
-│   │   └── mixin.js
-│   ├── store
-│   │   ├── index.js
-│   │   ├── index.wxml
-│   │   └── index.wxss
-│   └── watch-computed
-│       ├── index.js
-│       ├── index.wxml
-│       └── index.wxss
-├── project.config.json
-├── README.md
-├── store
-│   └── todos
-│       ├── index.js
-│       └── todo.js
-├── style
-│   └── common.wxss
-├── utils
-│   ├── index.js
-│   ├── observer.js // inspired by: https://github.com/80percent/wechat-weapp-mobx
-│   └── promisified.js
-└── vendor
-    └── mobx.js
-```
+> 1. yarn
+
+> 2. yarn watch | npm run watch | gulp
+
+> 3. yarn build | npm build | gulp build
